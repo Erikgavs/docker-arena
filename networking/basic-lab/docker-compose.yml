@@ -1,0 +1,27 @@
+services:
+  my-machine:
+    build: ./my-machine
+    container_name: my-machine
+    networks:
+      lab-net:
+        ipv4_address: 192.168.5.29
+    stdin_open: true
+    tty: true
+
+  webserver:
+    build: ./webserver
+    container_name: webserver
+    networks:
+      lab-net:
+        ipv4_address: 192.168.5.32
+    ports:
+      - "8585:80"
+    stdin_open: true
+    tty: true
+
+networks:
+  lab-net:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 192.168.5.0/24

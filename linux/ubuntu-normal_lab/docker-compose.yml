@@ -1,0 +1,14 @@
+services:
+  lab:
+    build: .
+    container_name: ubuntu-lab
+    ports:
+      - "8080:80"
+      - "2222:22"
+    volumes:
+      - ./shared:/mnt/shared
+    environment:
+      - LAB_MODE=easy
+    stdin_open: true
+    tty: true
+    restart: unless-stopped

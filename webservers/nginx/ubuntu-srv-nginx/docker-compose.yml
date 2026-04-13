@@ -1,0 +1,12 @@
+services:
+  webserver:
+    build: .
+    container_name: ubuntu-web
+    ports:
+      - "8081:80"
+      - "2224:22"
+    volumes:
+      - ./website:/var/www/html
+    stdin_open: true
+    tty: true
+    restart: unless-stopped
