@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafetería Altamura — Café de especialidad en Madrid</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;0,800;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="nav">
+        <div class="container nav__inner">
+            <a href="#" class="nav__logo">
+                <span class="nav__logo-mark">☕</span>
+                Altamura
+            </a>
+            <nav class="nav__links">
+                <a href="#origen">Nuestro origen</a>
+                <a href="#carta">Carta</a>
+                <a href="#granos">Granos</a>
+                <a href="#visitanos">Visítanos</a>
+            </nav>
+            <a href="#reserva" class="btn btn--primary">Reservar mesa</a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container hero__inner">
+            <div class="hero__content">
+                <span class="eyebrow">Tostadores artesanos desde 2014</span>
+                <h1>Cada taza cuenta una historia que empieza en la montaña.</h1>
+                <p class="lead">
+                    Seleccionamos granos de pequeños productores de Etiopía, Colombia
+                    y Guatemala, los tostamos cada semana en Madrid y los servimos
+                    en nuestra cafetería del barrio de Malasaña.
+                </p>
+                <div class="hero__cta">
+                    <a href="#carta" class="btn btn--primary">Ver la carta</a>
+                    <a href="#granos" class="btn btn--ghost">Comprar café →</a>
+                </div>
+                <div class="hero__stats">
+                    <div>
+                        <strong>12</strong>
+                        <span>orígenes únicos</span>
+                    </div>
+                    <div>
+                        <strong>9 años</strong>
+                        <span>tostando en Madrid</span>
+                    </div>
+                    <div>
+                        <strong>4.9 ★</strong>
+                        <span>en Google Reviews</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__visual">
+                <div class="hero__card hero__card--main">
+                    <div class="hero__card-label">Hoy en el molinillo</div>
+                    <div class="hero__card-title">Yirgacheffe G1</div>
+                    <div class="hero__card-sub">Etiopía · Lavado · Notas a jazmín y bergamota</div>
+                    <div class="hero__card-meter">
+                        <span class="hero__card-dot"></span>
+                        Tostado el lunes
+                    </div>
+                </div>
+                <div class="hero__card hero__card--float">
+                    <div class="hero__card-label">Método recomendado</div>
+                    <div class="hero__card-title">V60</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="origen" class="section section--light">
+        <div class="container grid-2">
+            <div>
+                <span class="eyebrow">Nuestro origen</span>
+                <h2>Un café que se construye antes de llegar a tu taza.</h2>
+            </div>
+            <div class="prose">
+                <p>
+                    Visitamos cada finca al menos una vez al año. Pagamos por encima
+                    del precio de mercado y firmamos contratos directos con los
+                    productores para que el café que servimos sea el reflejo justo
+                    de quien lo cultiva.
+                </p>
+                <p>
+                    En nuestro obrador de Madrid tostamos en lotes pequeños, con
+                    perfiles específicos para cada grano. Así protegemos los matices
+                    que hacen único a cada origen.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="carta" class="section">
+        <div class="container">
+            <div class="section__head">
+                <span class="eyebrow">Carta</span>
+                <h2>Lo que servimos cada mañana.</h2>
+            </div>
+            <div class="menu">
+                <article class="menu__item">
+                    <header>
+                        <h3>Espresso de la casa</h3>
+                        <span class="price">2,20 €</span>
+                    </header>
+                    <p>Blend de Brasil y Colombia. Cuerpo medio, dulce, con final a chocolate negro.</p>
+                </article>
+                <article class="menu__item">
+                    <header>
+                        <h3>Flat white</h3>
+                        <span class="price">3,40 €</span>
+                    </header>
+                    <p>Doble ristretto y leche entera sedosa. Servido en taza de 180 ml.</p>
+                </article>
+                <article class="menu__item">
+                    <header>
+                        <h3>V60 filtrado</h3>
+                        <span class="price">4,00 €</span>
+                    </header>
+                    <p>Pregúntanos qué origen está abierto hoy. Servido en jarra con taza aparte.</p>
+                </article>
+                <article class="menu__item">
+                    <header>
+                        <h3>Cold brew 24h</h3>
+                        <span class="price">3,80 €</span>
+                    </header>
+                    <p>Extracción lenta en frío. Suave, achocolatado y muy refrescante.</p>
+                </article>
+                <article class="menu__item">
+                    <header>
+                        <h3>Tostada de aguacate</h3>
+                        <span class="price">6,50 €</span>
+                    </header>
+                    <p>Pan de masa madre, aguacate, huevo pochado y aceite de oliva virgen extra.</p>
+                </article>
+                <article class="menu__item">
+                    <header>
+                        <h3>Bizcocho de limón y aceite</h3>
+                        <span class="price">3,20 €</span>
+                    </header>
+                    <p>Receta de la abuela de Marta, una de nuestras socias. Esponjoso y ácido.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="granos" class="section section--dark">
+        <div class="container">
+            <div class="section__head section__head--inverse">
+                <span class="eyebrow">Granos en tostadero</span>
+                <h2>Llévate el café a casa.</h2>
+            </div>
+            <div class="beans">
+                <article class="bean-card">
+                    <div class="bean-card__tag">Etiopía</div>
+                    <h3>Yirgacheffe G1</h3>
+                    <p class="bean-card__notes">Jazmín · Bergamota · Melocotón</p>
+                    <ul class="bean-card__meta">
+                        <li><span>Proceso</span><b>Lavado</b></li>
+                        <li><span>Tueste</span><b>Claro</b></li>
+                        <li><span>Altitud</span><b>2.050 m</b></li>
+                    </ul>
+                    <div class="bean-card__foot">
+                        <span class="price">14,90 € / 250 g</span>
+                        <button class="btn btn--primary btn--sm">Añadir</button>
+                    </div>
+                </article>
+                <article class="bean-card bean-card--featured">
+                    <div class="bean-card__tag">Colombia</div>
+                    <h3>Finca La Esperanza</h3>
+                    <p class="bean-card__notes">Cacao · Caramelo · Naranja</p>
+                    <ul class="bean-card__meta">
+                        <li><span>Proceso</span><b>Honey</b></li>
+                        <li><span>Tueste</span><b>Medio</b></li>
+                        <li><span>Altitud</span><b>1.780 m</b></li>
+                    </ul>
+                    <div class="bean-card__foot">
+                        <span class="price">12,50 € / 250 g</span>
+                        <button class="btn btn--primary btn--sm">Añadir</button>
+                    </div>
+                </article>
+                <article class="bean-card">
+                    <div class="bean-card__tag">Guatemala</div>
+                    <h3>Huehuetenango</h3>
+                    <p class="bean-card__notes">Chocolate con leche · Avellana · Miel</p>
+                    <ul class="bean-card__meta">
+                        <li><span>Proceso</span><b>Lavado</b></li>
+                        <li><span>Tueste</span><b>Medio</b></li>
+                        <li><span>Altitud</span><b>1.650 m</b></li>
+                    </ul>
+                    <div class="bean-card__foot">
+                        <span class="price">13,20 € / 250 g</span>
+                        <button class="btn btn--primary btn--sm">Añadir</button>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="visitanos" class="section">
+        <div class="container grid-2 visit">
+            <div>
+                <span class="eyebrow">Visítanos</span>
+                <h2>Calle del Pez, 18 — Malasaña, Madrid</h2>
+                <ul class="hours">
+                    <li><span>Lunes a viernes</span><b>08:00 — 19:00</b></li>
+                    <li><span>Sábados</span><b>09:30 — 20:00</b></li>
+                    <li><span>Domingos</span><b>10:00 — 15:00</b></li>
+                </ul>
+                <p class="prose">
+                    Tenemos wifi libre, enchufes y mesas grandes para trabajar.
+                    Los viernes a las 19:00 organizamos catas abiertas, sin reserva.
+                </p>
+                <a href="#" class="btn btn--primary">Cómo llegar</a>
+            </div>
+            <aside class="visit__card" id="reserva">
+                <h3>Reserva una mesa</h3>
+                <form onsubmit="event.preventDefault(); this.querySelector('.visit__ok').hidden=false;">
+                    <label>
+                        Nombre
+                        <input type="text" required placeholder="Cómo te llamas">
+                    </label>
+                    <label>
+                        Personas
+                        <select>
+                            <option>1 persona</option>
+                            <option selected>2 personas</option>
+                            <option>3 personas</option>
+                            <option>4 personas</option>
+                            <option>5 o más</option>
+                        </select>
+                    </label>
+                    <label>
+                        Fecha y hora
+                        <input type="datetime-local" required>
+                    </label>
+                    <button type="submit" class="btn btn--primary btn--block">Confirmar reserva</button>
+                    <p class="visit__ok" hidden>¡Gracias! Te hemos enviado un email con los detalles.</p>
+                </form>
+            </aside>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer__inner">
+            <div>
+                <div class="nav__logo"><span class="nav__logo-mark">☕</span> Altamura</div>
+                <p>Tostadores de café de especialidad en Madrid desde 2014.</p>
+            </div>
+            <div>
+                <h4>Contacto</h4>
+                <p>hola@altamuracafe.es<br>+34 910 00 00 00</p>
+            </div>
+            <div>
+                <h4>Síguenos</h4>
+                <p>Instagram · TikTok · Newsletter</p>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container">© 2026 Altamura Café. Todos los derechos reservados.</div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -11,7 +11,7 @@ apt install -y \
     curl wget vim \
     net-tools iputils-ping \
     mysql-server \
-    openssh-servery es
+    openssh-server
 
 echo "root:toor" | chpasswd
 sed -i 's/#*PermitRootLogin.*/PermitRootLogin yes/' /etc/ssh/sshd_config

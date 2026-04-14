@@ -1,0 +1,61 @@
+services:
+  nginx:
+    build: ./machine-nginx-ssh
+    container_name: lab-nginx
+    hostname: nginx-server
+    networks:
+      lab:
+        ipv4_address: 192.168.10.39
+    ports:
+      - "80:80"
+      - "2210:22"
+
+  ftp:
+    build: ./machine-ftp-ssh
+    container_name: lab-ftp
+    hostname: ftp-server
+    networks:
+      lab:
+        ipv4_address: 192.168.10.30
+    ports:
+      - "21:21"
+      - "21100-21110:21100-21110"
+      - "2220:22"
+
+  sql:
+    build: ./machine-sql
+    container_name: lab-sql
+    hostname: sql-server
+    networks:
+      lab:
+        ipv4_address: 192.168.10.32
+    ports:
+      - "3306:3306"
+      - "2230:22"
+
+  ssh:
+    build: ./machine-ssh
+    container_name: ssh-lab
+    hostname: ssh-server
+    networks:
+      lab:
+        ipv4_address: 192.168.10.25
+    ports:
+      - "2240:22"
+
+  client:
+    build: ./my-machine
+    container_name: attacker-lab
+    hostname: client
+    networks:
+      lab:
+        ipv4_address: 192.168.10.5
+    tty: true
+    stdin_open: true
+
+networks:
+  lab:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 192.168.10.0/24
