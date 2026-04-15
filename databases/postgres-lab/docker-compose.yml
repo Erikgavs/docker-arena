@@ -1,0 +1,13 @@
+services:
+  postgres:
+    build: .
+    container_name: postgres-lab
+    hostname: postgres-lab
+    ports:
+      - "5432:5432"
+    tty: true
+    stdin_open: true
+    
+    
+    
+    
